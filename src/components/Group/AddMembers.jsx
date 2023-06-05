@@ -26,13 +26,13 @@ const AddMembers = () => {
           <Input
             value={membersInput}
             type="text"
-            placeholder="Add names - Jim, Alice, Bravo"
+            placeholder="e.g : Jim, Alice, Bravo"
             onChange={(e) => setMembersInput(e.target.value)}
           />
         </Col>
         <Col span={3}>
           <Button className="btn-1" onClick={handleAddMembers} type="primary">
-            Add Name
+            Add Members
           </Button>
         </Col>
       </Row>

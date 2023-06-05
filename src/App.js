@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <h1>Group It !</h1>
       <GroupPage />
+      <footer>🇮🇳 TWFkZSBmb3IgZnVuIGJ5IDogSmF5IERvc2hp 🇮🇳</footer>
     </div>
   );
 }

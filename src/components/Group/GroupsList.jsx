@@ -33,7 +33,7 @@ const GroupItem = ({ member }) => {
             }}
             size="small"
           >
-            {member?.name?.[0].toUpperCase()}
+            {member?.name?.[0]?.toUpperCase()}
           </Avatar>
         }
       />

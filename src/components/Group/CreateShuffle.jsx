@@ -1,4 +1,4 @@
-import { Col, InputNumber, Row, Typography } from "antd";
+import { Col, InputNumber, Row, Tooltip, Typography } from "antd";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeGroupCount } from "../../features/group/groupSlice";
@@ -22,6 +22,7 @@ const CreateShuffle = () => {
     <div>
       <Row
         justify={"center"}
+        align={"bottom"}
         gutter={10}
         style={{ padding: "6px", margin: "16px 0px" }}
       >
@@ -54,6 +55,22 @@ const CreateShuffle = () => {
             max={20}
             size="middle"
           />
+        </Col>
+        <Col>
+          <Tooltip
+            placement="right"
+            title={"Should be less than total members."}
+          >
+            <Text
+              strong
+              style={{
+                fontSize: "0.9rem",
+                cursor: "pointer",
+              }}
+            >
+              ⓘ
+            </Text>
+          </Tooltip>
         </Col>
       </Row>
     </div>
